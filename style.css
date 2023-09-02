@@ -174,3 +174,41 @@ footer {
     max-width: 500px;
     max-height: 500px;
 }
+
+@media  and (max-width: 1330px) {
+    .container,
+    .container-more,
+    .container-total{
+        width: 50%;
+    }
+
+    .form{
+        width: 100%;
+    }
+}
+
+@media  and (max-width: 1064px) {
+    .container,
+    .container-more,
+    .container-total{
+        width: 90%;
+        height: auto;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+
+    .container img,
+    .container-more img{
+    display: none;
+    }
+}
